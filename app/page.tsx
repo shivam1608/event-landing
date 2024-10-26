@@ -17,7 +17,7 @@ const App = () => {
     <>
       <Hero />
       <div className="container mx-auto">
-        <h1 className={`${secondaryFont.className} `}></h1>
+        <h1 className={`${secondaryFont.className} text-[100px] mx-10`}>WHAT IS <span className='text-[#0652b8]'>HACKOVERFLOW</span>?</h1>
       </div>
     </>
   )

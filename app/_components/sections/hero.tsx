@@ -31,7 +31,7 @@ const Hero = () => {
               <img className='size-24' src="https://cyscomvit.com/hackoverflow/assets/images/event-logo.webp" alt="logo" />
               <h1 className={`${secondaryFont.className} text-[118px]`}>HACKOVERFLOW</h1>
             </div>
-            <CountdownTimer secondaryFont={secondaryFont} targetEpoch={1730026411} />
+            <CountdownTimer secondaryFont={secondaryFont} targetEpoch={1730195045} />
 
             <span className={`${secondaryFont.className} mt-10`}>#think before you click</span>
             <button className={`bg-[#0652b8] hover:opacity-90 rounded-full px-6 py-1 text-[32px] ${secondaryFont.className}`}>REGISTER</button>

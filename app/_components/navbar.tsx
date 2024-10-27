@@ -13,6 +13,29 @@ const Navbar = () => {
     setIsVisible(latest > 20);
   });
 
+  const navItems = [
+    {
+      href : "#event-hero" ,
+      name : "HOME"
+    },
+    {
+      href : "#event-about" ,
+      name : "ABOUT"
+    },
+    {
+      href : "#event-timeline" ,
+      name : "TIMELINE"
+    },
+    {
+      href : "#event-faqs" ,
+      name : "FAQs"
+    },
+    {
+      href : "#event-contact" ,
+      name : "CONTACT"
+    },
+  ]
+
   return (
     <motion.div
       initial={{ y: -50, opacity: 0 }}
@@ -22,11 +45,11 @@ const Navbar = () => {
     >
       <div className={`${primaryFont.className} flex bg-black h-fit rounded-full px-4 py-3 items-center space-x-4 border-[#064ca8] border-2 shadow-md bg-opacity-85 backdrop-blur-sm`}>
         <img className="h-10" src="https://cyscomvit.com/assets/images/logo.png" alt="cyscomlogo" />
-        
-        <Link href={"#event-hero"} >HOME</Link>
-        <Link href={"#event-about"} >ABOUT</Link>
-        <Link href={"#event-timeline"} >TIMELINE</Link>
-        <Link href={"#event-contact"} >CONTACT</Link>
+        {
+          navItems.map((v,_)=>(
+            <Link key={_} href={v.href} className='hover:text-gray-300'>{v.name}</Link>
+          ))
+        }
       </div>
     </motion.div>
   );

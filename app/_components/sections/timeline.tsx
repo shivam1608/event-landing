@@ -45,6 +45,11 @@ const Timeline = () => {
     <h1 id='event-timeline' className={`${secondaryFont.className} text-[100px] text-center`}>TIMELINE</h1>
       <div className="flex flex-col mx-auto items-center justify-center space-y-5 w-1/2 container mb-10 relative">
 
+      <img className='animate-float-1 absolute -z-10 -left-24 top-24 size-10 rotate-45' src="https://i.ibb.co/M96bwsV/image.png" alt="clock" />
+      <img className='animate-float-2 absolute -z-10 top-10 -right-24 size-14' src="https://i.ibb.co/M96bwsV/image.png" alt="clock" />
+      <img className='animate-float-3 absolute -z-10 -left-24 bottom-24 size-12' src="https://i.ibb.co/M96bwsV/image.png" alt="clock" />
+      <img className='animate-float-1 absolute -z-10 bottom-40 rotate-12 -right-28 size-14' src="https://i.ibb.co/M96bwsV/image.png" alt="clock" />
+
         {
             timelineData.map((v,_)=>(
                 <div key={_} className="flex hover:scale-105 transition-all duration-300 bg-[#0652b8] px-5 py-2 w-full rounded-lg items-center space-x-4">

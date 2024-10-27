@@ -1,8 +1,8 @@
 "use client";
 
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
-import { motion, useMotionValueEvent, useScroll, useTransform } from 'framer-motion';
+import React, { useState } from 'react';
+import { motion, useMotionValueEvent, useScroll } from 'framer-motion';
 import { primaryFont } from '../fonts/google_fonts';
 
 const Navbar = () => {

@@ -14,7 +14,7 @@ const secondaryFont = VT323({
 const Hero = () => {
   return (
     <>
-    <div className='h-screen relative'>
+    <div className='h-screen relative' id='event-hero'>
       <AnimatePresence>
             <div className="h-full w-full absolute inset-0 opacity-40 -z-10">
               <CanvasRevealEffect
